@@ -4,29 +4,23 @@ import Banner from "./views/Banner";
 import banner1 from "../../assests/banner/01.jpg";
 import banner2 from "../../assests/banner/02.jpg";
 import banner3 from "../../assests/banner/03.jpg";
-import banner0 from "../../assests/banner/04.jpeg";
 import GuideStep from "./views/GuideStep";
 import WinnerList from "./views/WinnerList";
+import SmallSlider from "./views/SmallSlider";
 import { withNamespaces } from "react-i18next";
 import { Helmet } from "react-helmet";
 import logo from "../../assests/navigationbar/logo.jpg";
+import Jackpot from "./views/Jackpot";
+import banking from "../../assests/banner/banking.jpeg";
+import digi from "../../assests/banner/digi.jpeg";
+import hotlink from "../../assests/banner/hotlink.jpeg";
+import tng from "../../assests/banner/tng.jpeg";
 
 const Home = ({ t }) => {
   const [banner] = useState([
-    { id: 0, src: banner0, title: null, content: null },
-    { id: 1, src: banner1, title: "bonusWelcome", content: "bonusWelcomeDesc" },
-    {
-      id: 2,
-      src: banner2,
-      title: "bonusUnlimited",
-      content: "bonusUnlimitedDesc",
-    },
-    {
-      id: 3,
-      src: banner3,
-      title: "bonusRecommend",
-      content: "bonusRecommendDesc",
-    },
+    {id: 1, src: banner1, title: "bonusWelcome", content: "bonusWelcomeDesc"},
+    {id: 2, src: banner2, title: "bonusUnlimited", content: "bonusUnlimitedDesc"},
+    {id: 3, src: banner3, title: "bonusRecommend", content: "bonusRecommendDesc"},
   ]);
   const [guide] = useState([
     { id: 1, title: "register", content: "registerdesc" },
@@ -36,6 +30,13 @@ const Home = ({ t }) => {
   ]);
   const [winnerList, setWinnerList] = useState([]);
   const [depositList, setDepositList] = useState([]);
+  const [smallBanner] = useState([
+    {name:"banking", src:banking},
+    {name:"digi", src:digi},
+    {name:"hotlink", src:hotlink},
+    {name:"tng", src:tng},
+  ]);
+
   useEffect(() => {
     let arr = [];
     let depositArr = [];
@@ -78,15 +79,6 @@ const Home = ({ t }) => {
     setDepositList({ depositArr });
   }, []);
 
-  // function randomTime(start, end) {
-  //   // get the difference between the 2 dates, multiply it by 0-1,
-  //   // and add it to the start date to get a new date
-  //   var diff = end.getTime() - start.getTime();
-  //   var new_diff = diff * Math.random();
-  //   var date = new Date(start.getTime() + new_diff);
-  //   return date;
-  // }
-
   return (
     <>
       <Helmet>
@@ -94,27 +86,31 @@ const Home = ({ t }) => {
         <title>{window.compName}</title>
         <meta
           name="description"
-          content="DIGIGO88 is one of the leading online betting sites in Malaysia"
+          content="JudiBang99 is one of the leading online betting sites in Malaysia"
         />
-        <link rel="canonical" href="https://digigo88.net/" />
+        <link rel="canonical" href="https://judibang99.net/" />
         <meta property="og:title" content={window.compName} />
         <meta
           property="og:description"
-          content="DIGIGO88 is one of the leading online betting sites in Malaysia"
+          content="JudiBang99 is one of the leading online betting sites in Malaysia"
         />
         <meta property="og:image" content={logo} />
-        <meta property="og:url" content="https://digigo88.net/" />
+        <meta property="og:url" content="https://judibang99.net/" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image:alt" content="DIGIGO88" />
+        <meta name="twitter:image:alt" content="JudiBang99" />
       </Helmet>
       <section className="homepage">
         <Banner banner={banner} />
-        <GuideStep guide={guide} />
+        <Jackpot />
         <div className="home-list">
+        <SmallSlider smallBanner={smallBanner}/>
+
           {winnerList !== undefined && depositList !== undefined && (
             <WinnerList list={winnerList} depositList={depositList} />
           )}
         </div>
+        <GuideStep guide={guide} />
+
       </section>
     </>
   );

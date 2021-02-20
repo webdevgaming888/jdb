@@ -1,10 +1,11 @@
 nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  width: 55%;
 }
 nav a {
-  color: #c09848;
+  color: #ffa500;
   text-decoration: none;
   padding: 5px 15px;
   font-size: 1rem;
@@ -18,7 +19,7 @@ nav a {
   }
   &:hover {
     text-decoration: none;
-    color: gold;
+    color: #ffff00;
   }
 }
 @media screen and (max-width: 768px) {

@@ -9,7 +9,6 @@ import TNG from "../../assests/footer/TNG.png";
 import Digi from "../../assests/footer/Digi.png";
 import Maxis from "../../assests/footer/Maxis.png";
 import Boost from "../../assests/footer/Boost.png";
-import SarawakPay from "../../assests/footer/SarawakPay.png"
 import "./Bank.scss";
 import { Helmet } from "react-helmet";
 import logo from "../../assests/navigationbar/logo.jpg"
@@ -53,11 +52,7 @@ const Bank = ({ t }) => {
     {
       name: "Boost",
       src: Boost,
-    },
-    {
-      name: "SarawakPay",
-      src: SarawakPay,
-    },
+    }
   ]);
   return (
     <>
@@ -68,14 +63,14 @@ const Bank = ({ t }) => {
           name="description"
           content="Easy deposit with Digi, Maxis and Multiple banks support"
         />
-        <link rel="canonical" href="https://digigo88.net/bank" />
+        <link rel="canonical" href="https://judibang99.net/bank" />
         <meta property="og:title" content={window.compName} />
         <meta property="og:description" content="Easy deposit with Digi, Maxis and Multiple banks support"
         />
         <meta property="og:image" content={logo} />
-        <meta property="og:url" content="https://digigo88.net/bank"/>
+        <meta property="og:url" content="https://judibang99.net/bank"/>
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image:alt" content="DIGIGO88" />
+        <meta name="twitter:image:alt" content="JudiBang99" />
       </Helmet>
       <section className="bank-page">
         <h2 className="page-title">{t("bank")}</h2>

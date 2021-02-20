@@ -1,12 +1,5 @@
 .guide-container {
-  background: linear-gradient(
-    to right,
-    #bf953f,
-    #fcf6ba,
-    #b38728,
-    #fbf5b7,
-    #aa771c
-  );
+  background: linear-gradient(#ffff00, #ffa500);
   padding: 1px;
 }
 .guide-inner {
@@ -50,7 +43,7 @@
 .guide-title {
   font-size: 1.5rem;
 
-  color: gold;
+  color: #ffff00;
   font-weight: bold;
 }
 .guide-content {

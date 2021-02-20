@@ -1,25 +1,22 @@
 .winner-list,
 .deposit-list {
-  width: 50%;
+  width: 60%;
   color: #fff;
-  height: 25rem;
+  height: 37.8rem;
   overflow: hidden;
 }
 .winner-list {
-  margin-right: 1rem;
+  margin-left: 1rem;
 }
 .title {
-  color: gold;
+  color: #ffff00;
   font-size: 1.8rem;
-  padding: 1rem 1.5rem;
-  text-align: center;
+  margin-top: 1rem;
+  padding: 0.5rem 2rem;
+  text-align: left;
   width: 100%;
   font-weight: bold;
-}
-.title-icon {
-  width: 1.5rem;
-  height: 1.5rem;
-  margin: 0 1rem;
+  background: linear-gradient(to bottom, #4b0100, #180010);
 }
 .list-header {
   padding: 0.5rem 1.5rem;
@@ -75,12 +72,11 @@
     width: 100%;
   }
   .winner-list {
-    margin-right: 0;
+    margin-left: 0;
   }
   .title {
-    font-size: 1.6rem;
-  }
-  .title-icon {
-    display: none;
+    font-size: 1.4rem;
+  text-align: center;
+
   }
 }

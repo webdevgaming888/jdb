@@ -7,13 +7,12 @@ import { Container } from "react-bootstrap";
 import i18n from "../../i18n";
 import { Component } from "react";
 export class Hamburger extends Component {
-
   render() {
     const { isOpen, handleOpen } = this.props;
-    const className = isOpen ? ' opened' : null;
+    const className = isOpen ? " opened" : null;
     return (
       <button
-        className={`menu ${className}` }
+        className={`menu ${className}`}
         onClick={handleOpen}
         aria-label="Main Menu"
       >
@@ -33,7 +32,7 @@ export class Hamburger extends Component {
   }
 }
 
-const Header = ({isOpen, handleOpen}) => {
+const Header = ({ isOpen, handleOpen }) => {
   const [showLang, setShowLang] = useState(false);
   const [currentLang, setCurrentLang] = useState("bm");
 
@@ -54,21 +53,33 @@ const Header = ({isOpen, handleOpen}) => {
   };
 
   return (
-    <section className="header">
-      <Container className="header-container">
-        <Hamburger isOpen={isOpen} handleOpen={handleOpen}/>
-        <Logo />
-        <Navbar />
-        <Login
-          langIconClick={langIconClick}
-          changeLanguage={changeLanguage}
-          showLang={showLang}
-          whatsappLink={whatsappLink}
-          currentLang={currentLang}
-        />
-        
-      </Container>
-    </section>
+    <>
+      <section className="header">
+        <Container className="header-logo">
+        <Hamburger isOpen={isOpen} handleOpen={handleOpen} />
+          <Logo />
+          <Login
+            langIconClick={langIconClick}
+            changeLanguage={changeLanguage}
+            showLang={showLang}
+            whatsappLink={whatsappLink}
+            currentLang={currentLang}
+          />
+        </Container>
+      </section>
+      <section className="header-navbar">
+        <Container className="header-container">
+          <Navbar />
+          <Login
+            langIconClick={langIconClick}
+            changeLanguage={changeLanguage}
+            showLang={showLang}
+            whatsappLink={whatsappLink}
+            currentLang={currentLang}
+          />
+        </Container>
+      </section>
+    </>
   );
 };
 export default Header;

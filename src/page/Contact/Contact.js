@@ -24,16 +24,16 @@ const Contact = ({ t }) => {
         <title>{window.compName} - Contact Us</title>
         <meta
           name="description"
-          content="24 Hour support just in Digigo88"
+          content="24 Hour support just in JudiBang99"
         />
-        <link rel="canonical" href="https://digigo88.net/contact" />
+        <link rel="canonical" href="https://judibang99.net/contact" />
         <meta property="og:title" content={window.compName} />
-        <meta property="og:description" content="24 Hour support just in Digigo88"
+        <meta property="og:description" content="24 Hour support just in JudiBang99"
         />
         <meta property="og:image" content={logo} />
-        <meta property="og:url" content="https://digigo88.net/contact"/>
+        <meta property="og:url" content="https://judibang99.net/contact"/>
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image:alt" content="DIGIGO88" />
+        <meta name="twitter:image:alt" content="JudiBang99" />
       </Helmet>
       <section className="contact-page">
         <h2 className="page-title">{t("contact")}</h2>

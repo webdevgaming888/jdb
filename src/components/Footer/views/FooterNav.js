@@ -12,7 +12,7 @@ const FooterNav = ({ navData, t }) => {
           {navData.map((link) => {
             return (
               <div key={link.id} className="footer-link">
-                <TiChevronRight className='right-icon'/>
+               
                 <Link to={`${process.env.PUBLIC_URL}${link.url}`}>{t(link.name)}</Link>
               </div>
             );

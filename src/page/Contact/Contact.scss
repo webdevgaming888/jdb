@@ -4,14 +4,7 @@
 }
 
 .contact-bg {
-  background: linear-gradient(
-    to right,
-    #bf953f,
-    #fcf6ba,
-    #b38728,
-    #fbf5b7,
-    #aa771c
-  );
+  background: linear-gradient(#ffff00, #ffa500);
   padding: 1px;
   display: flex;
   flex-direction: column;
@@ -36,7 +29,7 @@
   margin-right: 1rem;
 }
 .contact-title {
-  color: goldenrod;
+  color: #ffa500;
   display: flex;
   align-items: center;
   justify-content: center;

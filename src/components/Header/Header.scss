@@ -2,18 +2,45 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
   padding: 0.5rem 0;
   z-index: 3;
   position: relative;
   background: #000;
-  border-bottom: goldenrod 1px solid;
+  .login{
+    display: none;
+  }
+}
+.header-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.header-navbar{
+  background:linear-gradient(to bottom, #4b0100, #180010);
+  border-top:1px solid #ffa500;
+  border-bottom: 1px solid #ffa500;
+}
+
 .header-left {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .header-navbar{
+    display: none;
+  }
+  .header{
+    .login{
+      display: flex;
+    }
+  }
+  .header-logo{
+    justify-content: space-around;
+  }
 }

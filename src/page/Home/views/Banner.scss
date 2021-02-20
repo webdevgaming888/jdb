@@ -1,11 +1,6 @@
 .slick-slider {
-  box-shadow: 0 0 0.1vw 0.25vw #fff7f7, 0 0 0.25vw 0.4vw #e9c372,
-    0 0 4vw 0.25vw #e5ab0b, inset 0 0 1.5vw 0.25vw #e5ab0b,
-    inset 0 0 0.25vw 0.15vw #e9c372, inset 0 0 0.5vw 0.15vw #fff7f7;
-  margin-bottom: 3rem;
-  // border: 1px solid goldenrod;
-  background: #111;
-  max-height: 580px;
+  margin-bottom: 1rem;
+  // border: 1px solid #ffa500;
   overflow: hidden;
 }
 .banner {
@@ -15,37 +10,30 @@
 }
 .banner-content {
   background: rgba(0, 0, 0, 0.5);
-  height: 100%;
-  width: 45%;
+  height: 40%;
+  width: 100%;
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-right: 1px solid goldenrod;
+  bottom: 0;
   h1,
   p {
     padding: 0 2rem;
   }
   h1 {
-    color: goldenrod;
+    color: #ffff00;
   }
   p {
     color: #fff;
   }
   a {
-    width: 30%;
-    height: 6%;
+    width: 6rem;
+    height: 2rem;
     margin: 0 2rem;
     outline: none;
     border: none;
-    background: linear-gradient(
-      to right,
-      #bf953f,
-      #fcf6ba,
-      #b38728,
-      #fbf5b7,
-      #aa771c
-    );
+    background:linear-gradient(#ffff00, #ffa500);
     color: #000;
     font-weight: bold;
     display: flex;
@@ -68,7 +56,7 @@
   }
   .banner-content {
     width: 100%;
-    border: none;
+    height: 100%;
     h1 {
       font-size: 1.5rem;
     }

@@ -9,6 +9,8 @@ import BSN from "../../assests/footer/BSN.png";
 import PBB from "../../assests/footer/Public.png";
 import HLB from "../../assests/footer/HongLeong.png";
 import CIMB from "../../assests/footer/CIMB-Bank.png";
+import FooterContact from "./views/FooterContact";
+import {FaWhatsapp , FaTelegram} from "react-icons/fa";
 const Footer = () => {
   const [link] = useState([
     { id: 1, url: "/", name: "home" },
@@ -18,8 +20,8 @@ const Footer = () => {
     { id: 5, url: "/contact", name: "contact" },
   ]);
   const [contact] = useState([
-    { id: 1, method: "Whatsapp", phoneNo: "016-608 1430" },
-    { id: 2, method: "Telegram", phoneNo: "Digigo88" },
+    { id: 1, phoneNo: window.phone, icon: <FaWhatsapp /> },
+    { id: 2, phoneNo: window.phone, icon: <FaTelegram /> },
   ]);
 
   const [bank] = useState([
@@ -47,7 +49,8 @@ const Footer = () => {
   return (
     <footer className="footer">
       <Container className="footer-container">
-        <WhyUs contact={contact} footerLink={footerLink} />
+        <WhyUs  />
+        <FooterContact contact={contact} footerLink={footerLink}/>
         <FooterNav navData={link} />
         <FooterBank bank={bank} />
       </Container>
