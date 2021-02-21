@@ -1,7 +1,8 @@
 import React from "react";
 import Slider from "react-slick";
+import { withNamespaces } from "react-i18next";
 import "./SmallSlider.scss";
-const SmallSlider = ({ smallBanner }) => {
+const SmallSlider = ({ smallBanner,t }) => {
   var smallSetting = {
     dots: false,
     infinite: true,
@@ -15,7 +16,7 @@ const SmallSlider = ({ smallBanner }) => {
 
   return (
     <div className="small-slider">
-        <div className='title'>DEPOSIT METHOD</div>
+        <div className='title'>{t('depositMethod')}</div>
       <Slider {...smallSetting}>
         {smallBanner.map((item, i) => {
           return <img key={i} src={item.src} alt={item.name} />;
@@ -25,4 +26,4 @@ const SmallSlider = ({ smallBanner }) => {
   );
 };
 
-export default SmallSlider;
+export default withNamespaces()(SmallSlider);
