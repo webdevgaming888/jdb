@@ -12,11 +12,12 @@ import {
   newtown,
   pussy888,
   xe888,
+  rollex,
 } from "./GameImageData";
 import { withNamespaces } from "react-i18next";
 import { Helmet } from "react-helmet";
 
-import logo from "../../assests/navigationbar/logo.jpg"
+import logo from "../../assests/navigationbar/logo.jpg";
 
 const Game = ({ t }) => {
   const [gameList] = useState([
@@ -25,7 +26,8 @@ const Game = ({ t }) => {
       gameName: "918KISSPLUS",
       androidURL: "http://app.m-918kiss.online/",
       iosURL: "http://app.m-918kiss.online/",
-      agentURL: "",
+      agentURL:
+        "http://ck.9300o.com/admin/login.do;jsessionid=7D8DEAA9A6BF16ADCD7C597232647A74",
       gameLogo: kissplus,
     },
     {
@@ -33,7 +35,7 @@ const Game = ({ t }) => {
       gameName: "918KAYA",
       androidURL: "http://d.88ifun.com/",
       iosURL: "http://d.88ifun.com/",
-      agentURL: "",
+      agentURL: "https://k.889efun.com/login",
       gameLogo: kaya,
     },
     {
@@ -41,7 +43,7 @@ const Game = ({ t }) => {
       gameName: "918KISS",
       androidURL: "http://c1.d.918kiss.com/",
       iosURL: "http://c1.d.918kiss.com/",
-      agentURL: "",
+      agentURL: "https://kk2.918kiss.com/",
       gameLogo: kiss,
     },
     {
@@ -49,7 +51,7 @@ const Game = ({ t }) => {
       gameName: "MEGA888",
       androidURL: "http://m.mega385.com/mega/index.html",
       iosURL: "http://m.mega385.com/mega/index.html",
-      agentURL: "",
+      agentURL: "https://k3.xigift.com/201222/login.html",
       gameLogo: mega888,
     },
     {
@@ -57,7 +59,7 @@ const Game = ({ t }) => {
       gameName: "PUSSY888",
       androidURL: "http://dm21.pussy888.com/",
       iosURL: "http://dm21.pussy888.com/",
-      agentURL: "",
+      agentURL: "http://pe2.pussy888.com/",
       gameLogo: pussy888,
     },
     {
@@ -65,7 +67,7 @@ const Game = ({ t }) => {
       gameName: "EVO888",
       androidURL: "http://d.evo888.io/",
       iosURL: "http://d.evo888.io/",
-      agentURL: "",
+      agentURL: "http://k.evo388.com/",
       gameLogo: evo,
     },
     {
@@ -73,7 +75,7 @@ const Game = ({ t }) => {
       gameName: "XE88",
       androidURL: "https://d1.playalotgames.com/",
       iosURL: "https://d1.playalotgames.com/",
-      agentURL: "",
+      agentURL: "https://ki.playalotgames.com/",
       gameLogo: xe888,
     },
     {
@@ -81,7 +83,7 @@ const Game = ({ t }) => {
       gameName: "LUCKY PALACE",
       androidURL: "http://m.ld176988.com/download.html",
       iosURL: "http://m.ld176988.com/download.html",
-      agentURL: "",
+      agentURL: "https://kiosk.pt-ka.com/",
       gameLogo: lpe,
     },
     {
@@ -89,7 +91,7 @@ const Game = ({ t }) => {
       gameName: "LIVE22",
       androidURL: "https://yerba22.com/Login",
       iosURL: "https://yerba22.com/Login",
-      agentURL: "",
+      agentURL: "https://hongcha22.com/Login",
       gameLogo: live22,
     },
     {
@@ -97,7 +99,8 @@ const Game = ({ t }) => {
       gameName: "JOKER",
       androidURL: "http://www.joker123b.net/",
       iosURL: "http://www.joker123b.net/",
-      agentURL: "",
+      agentURL:
+        "http://www.awe7799.net/Account?url=http%3A%2F%2Fwww.awe7799.net%2F",
       gameLogo: joker,
     },
     {
@@ -105,8 +108,16 @@ const Game = ({ t }) => {
       gameName: "NEWTOWN",
       androidURL: "http://cdn.newplay66.com/m.html",
       iosURL: "http://cdn.newplay66.com/m.html",
-      agentURL: "",
+      agentURL: "https://kiosk.nday11.com/",
       gameLogo: newtown,
+    },
+    {
+      id: 12,
+      gameName: "Rollex",
+      androidURL: "http://cdn.rpro11.com/m.html",
+      iosURL: "http://cdn.rpro11.com/m.html",
+      agentURL: "https://kiosk.rpro11.com/",
+      gameLogo: rollex,
     },
   ]);
   function gameLinkRedirect(link) {
@@ -123,10 +134,12 @@ const Game = ({ t }) => {
         />
         <link rel="canonical" href="https://judibang99.net/games" />
         <meta property="og:title" content={window.compName} />
-        <meta property="og:description" content="JudiBang99 Best Slots Machine, and games to win"
+        <meta
+          property="og:description"
+          content="JudiBang99 Best Slots Machine, and games to win"
         />
         <meta property="og:image" content={logo} />
-        <meta property="og:url" content="https://judibang99.net/games"/>
+        <meta property="og:url" content="https://judibang99.net/games" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image:alt" content="JudiBang99" />
       </Helmet>
@@ -137,9 +150,14 @@ const Game = ({ t }) => {
             return (
               <div key={game.id} className="game-card">
                 <div className="game-card-inner">
-                  <h2>{game.gameName}</h2>
-                  <img src={game.gameLogo} alt={game.gameName} />
+                  <div className="game-left">
+                    <img src={game.gameLogo} alt={game.gameName} />
+                  </div>
+
                   <div className="game-button-group">
+                    <button className='btn-agent' onClick={() => gameLinkRedirect(game.agentURL)}>
+                      {t("agentLink")}
+                    </button>
                     <button onClick={() => gameLinkRedirect(game.androidURL)}>
                       {t("androidDL")}
                     </button>

@@ -9,6 +9,7 @@ import TNG from "../../assests/footer/TNG.png";
 import Digi from "../../assests/footer/Digi.png";
 import Maxis from "../../assests/footer/Maxis.png";
 import Boost from "../../assests/footer/Boost.png";
+import Hotlink from "../../assests/footer/Hotlink.png"
 import "./Bank.scss";
 import { Helmet } from "react-helmet";
 import logo from "../../assests/navigationbar/logo.jpg"
@@ -52,6 +53,10 @@ const Bank = ({ t }) => {
     {
       name: "Boost",
       src: Boost,
+    },
+    {
+      name:"Hotlink",
+      src:Hotlink
     }
   ]);
   return (

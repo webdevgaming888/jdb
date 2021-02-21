@@ -83,7 +83,7 @@ const Home = ({ t }) => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>{window.compName}</title>
+        <title>{window.compName} | Best Online Casino Malaysia | 918KISS</title>
         <meta
           name="description"
           content="JudiBang99 is one of the leading online betting sites in Malaysia"

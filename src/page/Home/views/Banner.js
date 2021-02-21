@@ -11,7 +11,7 @@ const Banner = ({ banner, t }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
   };
 

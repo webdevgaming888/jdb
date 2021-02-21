@@ -1,5 +1,4 @@
 import React from 'react'
-import { TiChevronRight } from "react-icons/ti";
 import { withNamespaces } from "react-i18next";
 
 const FooterContact = ({contact,footerLink, t}) => {

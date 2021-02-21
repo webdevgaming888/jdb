@@ -35,6 +35,8 @@ body::-webkit-scrollbar-thumb {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+
 .page-title {
   color: #ffff00;
   padding: 1rem 0;

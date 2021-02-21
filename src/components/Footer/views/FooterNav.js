@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { TiChevronRight } from "react-icons/ti";
 import { withNamespaces } from 'react-i18next';
 
 const FooterNav = ({ navData, t }) => {
