@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/jdb/static/css/main.cdbeef8c.chunk.css",
+    "main.js": "/jdb/static/js/main.fa66185e.chunk.js",
+    "main.js.map": "/jdb/static/js/main.fa66185e.chunk.js.map",
+    "runtime-main.js": "/jdb/static/js/runtime-main.85537395.js",
+    "runtime-main.js.map": "/jdb/static/js/runtime-main.85537395.js.map",
+    "static/css/2.023928df.chunk.css": "/jdb/static/css/2.023928df.chunk.css",
+    "static/js/2.8f9089ab.chunk.js": "/jdb/static/js/2.8f9089ab.chunk.js",
+    "static/js/2.8f9089ab.chunk.js.map": "/jdb/static/js/2.8f9089ab.chunk.js.map",
+    "static/js/3.3dcd3040.chunk.js": "/jdb/static/js/3.3dcd3040.chunk.js",
+    "static/js/3.3dcd3040.chunk.js.map": "/jdb/static/js/3.3dcd3040.chunk.js.map",
+    "index.html": "/jdb/index.html",
+    "static/css/2.023928df.chunk.css.map": "/jdb/static/css/2.023928df.chunk.css.map",
+    "static/css/main.cdbeef8c.chunk.css.map": "/jdb/static/css/main.cdbeef8c.chunk.css.map",
+    "static/js/2.8f9089ab.chunk.js.LICENSE.txt": "/jdb/static/js/2.8f9089ab.chunk.js.LICENSE.txt",
+    "static/media/01.d8dc65f9.jpg": "/jdb/static/media/01.d8dc65f9.jpg",
+    "static/media/02.8bc330e8.jpg": "/jdb/static/media/02.8bc330e8.jpg",
+    "static/media/03.75250439.jpg": "/jdb/static/media/03.75250439.jpg",
+    "static/media/918kiss.19c2831d.png": "/jdb/static/media/918kiss.19c2831d.png",
+    "static/media/banking.32d6f783.jpeg": "/jdb/static/media/banking.32d6f783.jpeg",
+    "static/media/App.css": "/jdb/static/media/bg4.b1b98ca0.jpg",
+    "static/media/digi.ef368d61.jpeg": "/jdb/static/media/digi.ef368d61.jpeg",
+    "static/media/hotlink.68632350.jpeg": "/jdb/static/media/hotlink.68632350.jpeg",
+    "static/media/logo.7dceb20f.jpg": "/jdb/static/media/logo.7dceb20f.jpg",
+    "static/media/Promotion.scss": "/jdb/static/media/promo-bg.20b91317.jpg",
+    "static/media/rollex.b555a417.png": "/jdb/static/media/rollex.b555a417.png",
+    "static/media/slick-theme.css": "/jdb/static/media/slick.c94f7671.ttf",
+    "static/media/WinnerList.scss": "/jdb/static/media/titlebanner.d32def6a.jpg",
+    "static/media/tng.4b627f21.jpeg": "/jdb/static/media/tng.4b627f21.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.85537395.js",
+    "static/css/2.023928df.chunk.css",
+    "static/js/2.8f9089ab.chunk.js",
+    "static/css/main.cdbeef8c.chunk.css",
+    "static/js/main.fa66185e.chunk.js"
+  ]
+}
