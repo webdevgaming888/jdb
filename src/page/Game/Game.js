@@ -13,6 +13,7 @@ import {
   pussy888,
   xe888,
   rollex,
+  greatwall
 } from "./GameImageData";
 import { withNamespaces } from "react-i18next";
 import { Helmet } from "react-helmet";
@@ -117,6 +118,14 @@ const Game = ({ t }) => {
       iosURL: "http://cdn.rpro11.com/m.html",
       agentURL: "https://kiosk.rpro11.com/",
       gameLogo: rollex,
+    },
+    {
+      id: 13,
+      gameName: "GreatWall",
+      androidURL: "https://gw.goshrimp888.com/APP/GW99/",
+      iosURL: "https://gw.goshrimp888.com/APP/GW99/",
+      agentURL: "https://mgw.goshrimp888.com/en-US/Member/Login",
+      gameLogo: greatwall,
     },
   ]);
   function gameLinkRedirect(link) {
