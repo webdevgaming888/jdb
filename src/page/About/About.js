@@ -15,7 +15,7 @@ const About = ({ t }) => {
         />
         <link rel="canonical" href="https://judibang99.net/about" />
         <meta property="og:title" content={window.compName} />
-        <meta property="og:description" content="JudiBang99 Welcome Bonus 50%! Trusted Company! Support Digi/Maxis! 24HOUR SUPPORT!"
+        <meta property="og:description" content="JudiBang99 is the best online casino Malaysia! Welcome Bonus 50%! Trusted Company! Support Digi/Maxis! 24HOUR SUPPORT!"
         />
         <meta property="og:image" content={logo} />
         <meta property="og:url" content="https://judibang99.net/about"/>
