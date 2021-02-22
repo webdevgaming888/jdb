@@ -26,8 +26,7 @@ const Game = ({ t }) => {
       gameName: "918KISSPLUS",
       androidURL: "http://app.m-918kiss.online/",
       iosURL: "http://app.m-918kiss.online/",
-      agentURL:
-        "http://ck.9300o.com/admin/login.do;jsessionid=7D8DEAA9A6BF16ADCD7C597232647A74",
+      agentURL: "http://hs.681958.com/admin/login.do",
       gameLogo: kissplus,
     },
     {
