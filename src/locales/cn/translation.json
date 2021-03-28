@@ -23,12 +23,12 @@
     "bank":"银行",
     "contactus":"联系我们",
     "join":"加入我们",
-    "bonusWelcome":"会员首充返利50%",
-    "bonusWelcomeDesc":"新会员首次充值可获得50%的返利",
+    "bonusWelcome":"会员首充返利30%",
+    "bonusWelcomeDesc":"新会员首次充值可获得30%的返利",
     "bonusUnlimited":"无限10%优惠",
     "bonusUnlimitedDesc":"每次充值可获得10%的返利",
-    "bonusRecommend":"推荐奖励",
-    "bonusRecommendDesc":"邀请您的朋友加入我们，您将获得其充值的10％！",
+    "bonusRecommend":"推荐奖励20%",
+    "bonusRecommendDesc":"邀请您的朋友加入我们，您将获得其充值的20％！",
     "redeem":"立即领取",
     "ewallet":"电子钱包",
     "androidDL":"安卓下载",
@@ -37,8 +37,8 @@
     "bankDesc":"我们支持多种银行充值，如果您发现您的银行不在以下列表中，请与我们联系:",
     "ewalletDesc":"我们还支持电子钱包充值，如果您发现自己的电子钱包不包含在我们的清单中，请与我们联系",
     "seemore":"查看更多",
-    "bonusWeekly":"每周5%回扣",
-    "bonusWeeklyDesc":"每周充值，您将获得5％的回扣",
+    "bonusWeekly":"每日5%回扣",
+    "bonusWeeklyDesc":"每日充值，您将获得5％的回扣",
     "depositMethod":"充值方式"
 
 }
