@@ -10,10 +10,10 @@ const Promotion = ({t}) => {
       title: "bonusWelcome",
       content: "bonusWelcomeDesc",
     },
-    {
-      title: "bonusUnlimited",
-      content: "bonusUnlimitedDesc",
-    },
+    // {
+    //   title: "bonusUnlimited",
+    //   content: "bonusUnlimitedDesc",
+    // },
     {
       title: "bonusRecommend",
       content:"bonusRecommendDesc",
